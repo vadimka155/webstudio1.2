@@ -1,0 +1,126 @@
+.team {
+    padding: 60px 0;
+    background-color: var(--section);
+    @media (max-width:1199px){
+        padding-top: 69px;
+        padding-bottom: 94px;
+    }
+    
+}
+.team-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    @media (min-width:768px) and (max-width:1199px){
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    @media (min-width:1199px){
+        justify-content: space-between;
+    }
+}
+.team-item {
+    width: 450px;
+    background-color: var(--maintext);
+    box-shadow: 0px 2px 1px 0px rgba(54, 52, 52, 0.3);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-bottom: 30px;
+    @media (min-width:768px) and (max-width:1199px){
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 354px;
+    }
+    @media (min-width:1199px){
+        justify-content: space-between;
+        width: 270px;
+        
+    }
+    
+    &:last-child {
+        margin-bottom: 0;
+        @media (min-width: 1199px) {
+            margin-bottom: 30px;
+        }
+    }
+    &:nth-child(3),
+    &:last-child {
+        @media (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: 0;
+        }
+    }
+}
+.team-img {
+    width: 450px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+    }
+    @media (min-width: 1199px) {
+        width: 270px;
+    }
+}
+.team-name {
+    font-size: 16px;
+    text-align: center;
+    margin: 30px 0 10px 0;
+    font-weight: 500;
+}
+.team-profession {
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.team-social {
+    display: flex;
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.team-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.team-link:hover,
+.team-link:focus {
+    background-color: var(--axent);
+}
+.team-instagram {
+    background-image: url(../img/instagram-team.svg);
+}
+.team-instagram:hover,
+.team-instagram:focus {
+    background-image: url(../img/instagram.svg);
+}
+.team-twitter {
+    background-image: url(../img/twitter-team.svg);
+}
+.team-twitter:hover,
+.team-twitter:focus {
+    background-image: url(../img/twitter.svg);
+}
+.team-facebook {
+    background-image: url(../img/facebook-team.svg);
+}
+.team-facebook:hover,
+.team-facebook:focus {
+    background-image: url(../img/facebook.svg);
+}
+.team-linkedin {
+    background-image: url(../img/linkedin-team.svg);
+}
+.team-linkedin:hover,
+.team-linkedin:focus {
+    background-image: url(../img/linkedin.svg);
+}

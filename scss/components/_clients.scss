@@ -1,0 +1,116 @@
+.clients {
+    padding: 60px 0;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        padding: 60px 0;
+    }
+    @media (min-width: 1199px) {
+        padding: 94px 0;
+    }
+}
+
+.clients-title {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.client1 {
+    background-image: url(../img/client1.svg);
+}
+.client1:hover,
+.client1:focus {
+    background-image: url(../img/client1-hover.svg);
+}
+.client2 {
+    background-image: url(../img/client2.svg);
+}
+.client2:hover,
+.client2:focus {
+    background-image: url(../img/client2-hover.svg);
+}
+.client3 {
+    background-image: url(../img/client3.svg);
+}
+.client3:hover,
+.client3:focus {
+    background-image: url(../img/client3-hover.svg);
+}
+.client4{
+    background-image: url(../img/client4.svg);
+}
+.client4:hover,
+.client4:focus {
+    background-image: url(../img/client4-hover.svg);
+}
+.client5{
+    background-image: url(../img/client5.svg);
+}
+.client5:hover,
+.client5:focus {
+    background-image: url(../img/client5-hover.svg);
+}
+.client6{
+    background-image: url(../img/client6.svg);
+}
+.client6:hover,
+.client6:focus {
+    background-image: url(../img/client6-hover.svg);
+}
+.clients-client {
+    width: 170px;
+    height: 92px;
+    display: block;
+    border: solid 1px var(--logos);
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clients-client:hover,
+.clients-client:focus {
+    border: solid 1px var(--axent);
+}
+
+.clients-client {
+    width: 210px;
+    height: 92px;
+    display: block;
+    border: solid 1px var(--logos);
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 226px;
+        height: 92px;
+    }
+    @media (min-width: 1199px) {
+        width: 170px;
+        height: 92px;
+    }
+}
+.clients-item {
+    margin-bottom: 30px;
+    &:nth-child(5),
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        &:nth-child(4),
+        &:nth-child(5),
+        &:last-child {
+        margin-bottom: 0px;
+    }
+    }
+    @media (min-width: 1199px) {
+        margin-bottom: 0px;
+    }
+}
+.clients-client:hover,
+.clients-client:focus {
+    border: solid 1px var(--axent);
+}

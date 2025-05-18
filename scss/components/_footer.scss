@@ -1,0 +1,171 @@
+.footer {
+    background-color: var(--main);
+    padding: 60px 0;
+}
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    & * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: row;
+    }
+    @media (min-width: 1199px) {
+        flex-direction: row;
+    }
+}
+.footer-logo, .footer-title, .footer-fact, .footer-adress {
+    text-align: center;
+    @media (min-width: 1199px) {
+        text-align: left;
+    }
+}
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--background);
+    display: block;
+    margin-bottom: 20px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-adress {
+    font-size: 14px;
+}
+.footer-logo:hover {
+    color: var(--axent);
+}
+.footer-fact {
+    color: var(--contacts);
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-fact:hover,
+.footer-fact:focus {
+    color: var(--axent);
+}
+.footer-item {
+    margin-bottom: 9px;
+}
+.footer-item:last-child {
+    margin-bottom: 0;
+}
+.footer-location {
+    color: var(--background);
+}
+.footer-join {
+    margin-left: 70px;
+    margin-right: 93px;
+}
+.footer-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--background);
+    margin-bottom: 20px;
+}
+
+.footer-social{
+    display: flex;
+    width: 206px;
+    justify-content: space-between;
+}
+
+.footer-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--buttons);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-instagram {
+    background-image: url(../img/instagram.svg);
+}
+.footer-twitter {
+    background-image: url(../img/twitter.svg);
+}
+.footer-facebook {
+    background-image: url(../img/facebook.svg);
+}
+.footer-linkedin {
+    background-image: url(../img/linkedin.svg);
+}
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--axent);
+}
+.footer-input {
+    background-color: transparent;
+    border: 1px solid var(--footer-border);
+    padding: 15px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    color: var(--background);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 450px;
+    margin-bottom: 20px;
+    @media (min-width: 1199px) {
+        width: 358px;
+        margin-bottom: 0;
+    }
+    @media (max-width: 1199px){
+        display: block;
+    }
+}
+
+.footer-inf{
+    color: var(--maintext);
+}
+
+.footer-input:focus {
+    outline: none;
+    border-color: var(--axent);
+}
+
+.footer-button {
+    background-color: var(--axent);
+    border: none;
+    color: var(--background);
+    padding: 15px 62px 15px 28px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    background-image: url(../img/subscribe.svg);
+    background-repeat: no-repeat;
+    background-position: 135px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media (max-width: 1199px){
+        display: block;
+    }
+}
+.footer-button:hover,
+.footer-button:focus {
+    background-color: var(--dark-axent);
+}
+
+.footer-info {
+    margin-bottom: 60px;
+    @media (min-width: 1199px) {
+        margin-bottom: 0;
+    }
+}
+.footer-join {
+    margin-bottom: 60px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 5px;
+    }
+    @media (min-width: 1199px) {
+        margin-bottom: 0;
+    }
+}
+
+.logo-white{
+    color: var(--background);
+}

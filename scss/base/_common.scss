@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    color: var(--firstlogo);
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    min-width: max-content;
+}
+button {
+    font-family: "Roboto", sans-serif;
+}
+.main {
+    border-top: solid 1px var(--heder-shadow);
+}
+.container {
+    margin: 0 auto;
+    width: 450px;
+    padding: 0 15px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 798px;
+    }
+    @media (min-width: 1199px) {
+        width: 1200px;
+        padding: 0 15px;
+    }
+}
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}

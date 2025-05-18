@@ -1,0 +1,88 @@
+.features {
+    padding: 60px 0;
+    @media (min-width: 1199px) {
+        padding: 94px 0;
+    }
+}
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-left: 0;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 1199px) {
+        justify-content: space-between;
+    }
+}
+.features-item {
+    width: 450px;
+    padding-left: 0;
+    margin-bottom: 30px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+    }
+    @media (min-width: 1199px) {
+        width: 270px;
+        margin-bottom: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:nth-child(3),
+    &:last-child {
+        @media (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: 0;
+        }
+    }
+}
+.features-item::before {
+    display: block;
+    content: "";
+    width: 450px;
+    height: 120px;
+    background-color: var(--section);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+    }
+    @media (min-width: 1199px) {
+        width: 270px;
+    }
+}
+.features-item:first-child::before {
+    background-image: url(../img/antenna.png);
+}
+.features-item:nth-child(2)::before {
+    background-image: url(../img/clock.png);
+}
+.features-item:nth-child(3)::before {
+    background-image: url(../img/diagram.png);
+}
+.features-item:last-child::before {
+    background-image: url(../img/astronaut.png);
+}
+.features-text {
+    line-height: 1.71;
+    color: var(--text);
+    font-size: 14px;
+}
+.features-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        text-align: left;
+    }
+    @media (min-width: 1199px) {
+        text-align: left;
+    }
+}

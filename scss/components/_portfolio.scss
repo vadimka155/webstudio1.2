@@ -1,0 +1,160 @@
+.portfolio {
+    padding: 60px 0;
+    @media (min-width: 1199px) {
+        padding: 94px 0;
+    }
+}
+.portfolio-button {
+    font-weight: 500;
+    background-color: var(--section);
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    line-height: 1.62;
+    padding: 6px 22px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buttons-list {
+    width: 326px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 575px;
+    }
+    @media (min-width: 1199px) {
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        width: 575px;
+    }
+}
+.buttons-item {
+    margin-right: 8px;
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3) {
+        margin-bottom: 15px;
+        @media (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: 0;
+        }
+        @media (min-width: 1199px) {
+            margin-bottom: 0;
+        }
+    }
+}
+.buttons-item:nth-child(3) {
+    margin-right: 0;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 8px;
+    }
+    @media (min-width: 1199px) {
+        margin-right: 8px;
+    }
+}
+.buttons-item:last-child {
+    margin-right: 0;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--axent);
+    color: var(--maintext);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.portfolio-now {
+    background-color: var(--axent);
+    color: var(--maintext);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio-item {
+    border: var(--border) solid 1px;
+    width: 450px;
+    height: 404px;
+    overflow: hidden;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+    }
+    @media (min-width: 1199px) {
+        width: 370px;
+    }
+}
+.portfolio-link {
+    margin-bottom: 30px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.portfolio-link:last-child {
+    margin-bottom: 0px;
+}
+@media (min-width: 1199px) {
+    .portfolio-link:last-child,
+    .portfolio-link:nth-child(8),
+    .portfolio-link:nth-child(7) {
+        margin-bottom: 0px;
+    }
+}
+.portfolio-img {
+    width: 450px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+    }
+    @media (min-width: 1199px) {
+        width: 370px;
+    }
+}
+
+.portfolio-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 20px 0 4px 24px;
+}
+.portfolio-category {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.87;
+    margin: 0 0 20px 24px;
+}
+.portfolio-box {
+    position: relative;
+    overflow: hidden;
+    height: 294px;
+}
+.portfolio-panel {
+    position: absolute;
+    height: 294px;
+    background-color: var(--panel);
+    color: var(--background);
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 3%;
+    bottom: 0;
+    transform: translateY(101%);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 450px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+    }
+    @media (min-width: 1199px) {
+        width: 370px;
+    }
+}
+.portfolio-link:hover .portfolio-item .portfolio-box .portfolio-panel {
+    transform: translateY(0);
+}
